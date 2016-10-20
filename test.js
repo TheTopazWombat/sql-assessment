@@ -85,6 +85,7 @@ test('Get Count of Vehicles By owner\'s Id' ,async t =>{
 const res = await request(app)
   .get('/api/user/1/vehiclecount')
   let db = app.get('db');
+  console.log("Hi Jeremy, I'm supposed to be a database but I'm actually undefined as you can see. Isaac's code actually works. I'll be on line 88 of test.js if you need me.", db);
   db.run('SELECT Count(*) FROM vehicles WHERE ownerId = 1',
   function(err, response){
     t.is(res.status, 200, 'Status is not 200')

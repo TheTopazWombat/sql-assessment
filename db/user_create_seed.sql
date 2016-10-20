@@ -5,3 +5,36 @@
 ( 'John', 'Smith', 'John@Smith.com'),
 ( 'Dave', 'Davis', 'Dave@Davis.com'),
 ( 'Jane', 'Janis', 'Jane@Janis.com');
+
+insert into users (
+  firstname,
+  lastname,
+  email
+)
+values (
+  'John',
+  'Smith',
+  'John@smith.com'
+);
+
+insert into users (
+  firstname,
+  lastname,
+  email
+)
+values (
+  'Dave',
+  'Davis',
+  'Dave@Davis.com'
+);
+
+insert into users (
+  firstname,
+  lastname,
+  email
+)
+values (
+  'Jane',
+  'Janis',
+  'Jane@Janis.com'
+)
